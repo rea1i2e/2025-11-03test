@@ -2,8 +2,23 @@
 @use "base/function" as *;
 @use "base/_breakpoints.scss" as *;
 
-.test {
-  width: rem(100);
-  aspect-ratio: 1;
-  background-color: red;
+.splide {
+
+}
+
+.splide__track {
+
+}
+
+.splide__list {
+
+}
+
+.splide__slide {
+  width: 400px;
+}
+
+.splide__slide img {
+  aspect-ratio: 2/1;
+  object-fit: cover;
 }
