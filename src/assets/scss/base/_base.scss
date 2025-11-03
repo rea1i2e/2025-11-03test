@@ -1,0 +1,50 @@
+@use "breakpoints" as *;
+@use "setting" as *;
+@use "function" as *;
+
+
+/* リキッドレイアウト */
+html {
+  font-size: 16px;
+
+  @if $startFrom == sp {
+    @media (max-width: 375px) {
+      font-size: vw(375, 16);
+    }
+
+    @include mq() {
+      font-size: vw($inner-pc + $padding-pc * 2, 16);
+    }
+
+    @media (min-width: #{$inner-pc + $padding-pc * 2}px) {
+      font-size: 16px;
+    }
+  } @else {
+    @media (max-width: #{$inner-pc + $padding-pc * 2}px) {
+      font-size: vw($inner-pc + $padding-pc * 2, 16);
+    }
+
+    @include mq() {
+      font-size: 16px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: vw(375, 16);
+    }
+  }
+}
+
+
+a {
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.7;
+  }
+}
+
+a:focus-visible {
+  opacity: 0.7;
+}

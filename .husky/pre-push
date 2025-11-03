@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🌐 GitHub Pages URL:"
+echo "   https://rea1i2e.github.io/2025-09-27test/"
+echo ""
+echo "💡 Quick access: npm run open"

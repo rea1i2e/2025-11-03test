@@ -1,0 +1,21 @@
+{
+  "name": "2025-09-27test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "open": "open https://rea1i2e.github.io/$(basename $(pwd))/",
+    "url": "echo \"https://rea1i2e.github.io/$(basename $(pwd))/\"",
+    "settings": "open \"https://github.com/rea1i2e/$(basename $(pwd))/settings/pages\"",
+    "commit": "git add . && git commit -m \"Update\" && git push origin main"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "sass": "^1.93.2",
+    "vite": "^7.1.7"
+  }
+}
